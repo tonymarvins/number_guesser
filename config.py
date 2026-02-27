@@ -4,4 +4,4 @@ LEVELS = {
     "3": (200, 15)
 }
 
-APP_NAME ="Number Guesser Deluxe 🧮"
+APP_NAME ="Number Guesser Deluxe "
