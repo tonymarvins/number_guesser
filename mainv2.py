@@ -28,3 +28,6 @@ while attempts < max_tries:
 #Game over message 
 if attempts == max_tries and result !="Correct":
     print(f"Game over! The number was {number_to_guess}")
+#score logging
+with open("score.txt", "a") as f:
+    f.write(f"Level {level}: {attempts} tries\n")
