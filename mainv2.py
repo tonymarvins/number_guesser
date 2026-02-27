@@ -12,16 +12,9 @@ print("3. Hard (1-200, 5 tries)")
 
 level = input("Choose level (1-3): ")
 
-if level == "1":
-  max_tries = 10
-  number_to_guess = random.randint(1, 50)
-elif level == "2":
-  max_tries = 12
-  number_to_guess = random.randint(1,100)
-else:
-  max_tries = 15
-  number_to_guess = random.randint(1,200)
+number_to_guess, max_tries = generate_number(level)
 
+log(f"Game started at level {level}")
 attempts = 0
 while attempts < max_tries:
   guess = int(input("Enter your guess: "))
