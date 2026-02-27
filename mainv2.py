@@ -31,3 +31,8 @@ if attempts == max_tries and result !="Correct":
 #score logging
 with open("score.txt", "a") as f:
     f.write(f"Level {level}: {attempts} tries\n")
+play_again = input("Play again? (y/n): ")
+#replay option
+if play_again.lower() != "y":
+    print("Thanks for playing! 👋")
+    break
