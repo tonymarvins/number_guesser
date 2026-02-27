@@ -25,6 +25,6 @@ while attempts < max_tries:
      print(f"You guessed it in {attempts} tries! 🎉")
         break
   
-
-if attempts == max_tries and guess != number_to_guess:
+#Game over message 
+if attempts == max_tries and result !="Correct":
     print(f"Game over! The number was {number_to_guess}")
