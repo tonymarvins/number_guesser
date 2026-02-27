@@ -31,3 +31,6 @@ if guess < number_to_guess:
   print("Too low!")
 elif guess > number_to_guess:
   print("Too high!")
+
+if attempts == max_tries and guess != number_to_guess:
+    print(f"Game over! The number was {number_to_guess}")
