@@ -27,3 +27,7 @@ while attempts < max_tries:
         break
     else:
         print("Wrong! Try again.")
+if guess < number_to_guess:
+  print("Too low!")
+elif guess > number_to_guess:
+  print("Too high!")
