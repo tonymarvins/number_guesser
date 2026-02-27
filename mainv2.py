@@ -1,3 +1,7 @@
+from game import generate_number, check_guess
+from utils import get_number, log
+from config import APP_NAME, LEVELS
+
 # Welcome message
 print(f"\nWelcome to {APP_NAME}!")
 # Level selection
