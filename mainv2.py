@@ -11,11 +11,12 @@ print("2. Medium (1-100, 7 tries)")
 print("3. Hard (1-200, 5 tries)")
 
 level = input("Choose level (1-3): ")
-
+#generate number and set max tries
 number_to_guess, max_tries = generate_number(level)
 
 log(f"Game started at level {level}")
 attempts = 0
+#main gameloop
 while attempts < max_tries:
   guess = get_number("Enter your guess: "))
     attempts += 1
