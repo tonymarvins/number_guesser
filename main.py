@@ -6,3 +6,8 @@ print("Welcome to the Number Guesser Game!")
 number_to_guess = random.randit(1, 100)
 print("Guess a number between 1 and 100")
 guess = int(input("Enter your guess: "))
+
+if guess == number_to_guess:
+  print("You guessed it! 🎉")
+else:
+  print("Wrong! Try again.")
